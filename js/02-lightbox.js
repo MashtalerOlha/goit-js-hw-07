@@ -21,8 +21,8 @@ galleryEl.insertAdjacentHTML("beforeend", galleryList);
 galleryEl.addEventListener("click", onClickImage);
 
 let gallery = new SimpleLightbox(".gallery a", {
-    captionsData: "alt",
-    captionDelay: 250,
+  captionsData: "alt",
+  captionDelay: 250,
 });
 
 function onClickImage(evt) {
@@ -30,7 +30,5 @@ function onClickImage(evt) {
   if (evt.target.nodeName !== "IMG") {
     return;
   }
-  gallery.on("show.simplelightbox", {
-
-  });
+  gallery.on("show.simplelightbox", {});
 }
